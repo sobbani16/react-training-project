@@ -3,11 +3,23 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import CounterComponent from './Components/CounterComponent/CounterComponent';
+import PasswordField from './Components/PasswordField/PasswordField';
+import ShoppingComponent from './Components/ShoppingComponent/Shopping';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="shopping" element={<ShoppingComponent />} />
+        <Route path="counter" element={<CounterComponent />} />
+        <Route path="password" element={<PasswordField />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
