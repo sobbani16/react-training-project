@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import FirstComponent from '../FirstComponent/FirstComponent';
 import SecondComponent from '../SecondComponent/SecondComponent';
@@ -33,12 +33,24 @@ const ShoppingComponent = () => {
       buttonText: "Add to cart"
     }
   ];
+
+  const [counter, setCounter] = useState(0);
+  const changeCounter = () => {
+    setCounter(counter+1);
+  }
+
+
+  const triggerThisCallback = () => {
+    alert("callback triggered");
+  };
+
+  
   return (
     <div>
       <button>
             <Link to="/">Home</Link>
           </button>
-      <SecondComponent />
+      <SecondComponent handleCallback= {changeCounter} counter={counter} triggerThisCallback={triggerThisCallback}/>
 
       <div style={{ display: "flex" }}>
         {renderData.map(element =>

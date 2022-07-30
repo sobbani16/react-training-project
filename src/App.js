@@ -14,6 +14,9 @@ function App() {
           <button>
             <Link to="/password">Password App</Link>
           </button>
+          <button>
+            <Link to="/third-component">Third component</Link>
+          </button>
         </nav>
     </div>
   );

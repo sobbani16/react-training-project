@@ -2,7 +2,7 @@ import React from 'react';
 import './FirstComponent.css';
 
 const FirstComponent = (props) => {
-    console.log(props);
+    // console.log(props);
     const { image, description, price, buttonText } = props;
 
     
