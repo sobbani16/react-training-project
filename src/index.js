@@ -8,11 +8,14 @@ import CounterComponent from './Components/CounterComponent/CounterComponent';
 import PasswordField from './Components/PasswordField/PasswordField';
 import ShoppingComponent from './Components/ShoppingComponent/Shopping';
 import ThirdComponent from './Components/ThirdComponent/ThirdComponent';
+import { Provider } from 'react-redux';
+import { store } from './store';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Provider store={store}>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
@@ -22,6 +25,7 @@ root.render(
         <Route path="third-component" element={<ThirdComponent/>}/>
       </Routes>
     </BrowserRouter>
+    </Provider>
   </React.StrictMode>
 );
 

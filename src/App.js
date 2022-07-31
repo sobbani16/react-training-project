@@ -1,8 +1,11 @@
 import './App.css';
 import { Link } from 'react-router-dom';
+import CartComponent from './Components/CartComponent/CartComponent';
 
 function App() {
   return (
+    <>
+    <div><CartComponent/></div>
     <div style={{ display: "flex" }}>
         <nav>
           <button>
@@ -19,6 +22,8 @@ function App() {
           </button>
         </nav>
     </div>
+    </>
+    
   );
 }
 

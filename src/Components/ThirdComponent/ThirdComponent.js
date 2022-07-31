@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 const ThirdComponent = () => {
 
     const [ count, setCount] = useState(0);
-    const [ name, setName] = useState("Prashanth");
 
       useEffect(() => {
         console.log("This is mounting phase");

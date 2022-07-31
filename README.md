@@ -15,4 +15,6 @@ You may also see any lint errors in the console.
 1. Install react router npm package by using the command `npm i react-router-dom`
 2. Import BrowserRouter like this `import { BrowserRouter } from 'react-router-dom'` in index.js
 3. Wrap <BrowserRouter> around the <App/> component. 
-4. 
+
+
+https://egghead.io/lessons/react-split-your-redux-store-into-multiple-reducers
