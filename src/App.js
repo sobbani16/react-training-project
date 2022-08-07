@@ -20,6 +20,12 @@ function App() {
           <button>
             <Link to="/third-component">Third component</Link>
           </button>
+          <button>
+            <Link to="/axios-component">Axios Component</Link>
+          </button>
+          <button>
+            <Link to="/axios-component-post">Axios Component Post</Link>
+          </button>
         </nav>
     </div>
     </>

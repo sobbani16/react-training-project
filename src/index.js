@@ -10,6 +10,8 @@ import ShoppingComponent from './Components/ShoppingComponent/Shopping';
 import ThirdComponent from './Components/ThirdComponent/ThirdComponent';
 import { Provider } from 'react-redux';
 import { store } from './store';
+import AxiosApp from './Components/AxiosDemo/Axios-demo';
+import AxiosAppPost from './Components/AxiosDemo/Axios-demo-post';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -23,6 +25,8 @@ root.render(
         <Route path="counter" element={<CounterComponent />} />
         <Route path="password" element={<PasswordField />} />
         <Route path="third-component" element={<ThirdComponent/>}/>
+        <Route path="axios-component" element={<AxiosApp/>}/>
+        <Route path="axios-component-post" element={<AxiosAppPost/>}/>
       </Routes>
     </BrowserRouter>
     </Provider>
